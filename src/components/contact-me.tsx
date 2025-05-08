@@ -53,7 +53,7 @@ export default function ContactMe() {
         </div>
 
         <img
-          src="src/assets/profile.webp"
+          src="profile.webp"
           alt="Foto de perfil"
           className="h-[624px] w-[468px] rounded-2xl"
         />
