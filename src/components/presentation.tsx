@@ -1,7 +1,7 @@
 import Button from "./button";
 
-import Instagram from "../../public/instagram.svg?react";
-import WhatsApp from "../../public/whatsapp.svg?react";
+import Instagram from "../assets/instagram.svg?react";
+import WhatsApp from "../assets//whatsapp.svg?react";
 
 import sections from "../consts/sections";
 
