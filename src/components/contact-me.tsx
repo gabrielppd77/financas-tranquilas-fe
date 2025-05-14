@@ -32,6 +32,8 @@ export default function ContactMe() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       );
 
+      alert("Email enviado com sucesso");
+
       setDataForm(initialDataForm);
     } catch (e) {
       console.error(e);
@@ -43,23 +45,23 @@ export default function ContactMe() {
 
   return (
     <div className="py-20">
-      <div className="flex gap-4">
+      <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <div className="w-full">
           <h1 className="px-5 py-3 text-4xl">Contate-me</h1>
           <form
             className="flex flex-col items-center gap-4 py-5"
             onSubmit={handleSendEmail}
           >
-            <div className="flex w-full items-center justify-center gap-4">
+            <div className="flex w-full flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
               <label
                 htmlFor="nome-input"
-                className="w-32 text-end text-slate-500"
+                className="w-12 text-end text-slate-500 sm:w-24"
               >
                 Nome
               </label>
               <input
                 id="nome-input"
-                className="h-10 w-96 rounded border border-slate-300 px-4"
+                className="h-10 w-70 rounded border border-slate-300 px-4 sm:w-96"
                 required
                 value={dataForm.name}
                 onChange={(e) =>
@@ -70,17 +72,17 @@ export default function ContactMe() {
               />
             </div>
 
-            <div className="flex w-full items-center justify-center gap-4">
+            <div className="flex w-full flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
               <label
                 htmlFor="email-input"
-                className="w-32 text-end text-slate-500"
+                className="w-12 text-end text-slate-500 sm:w-24"
               >
                 E-mail
               </label>
               <input
                 id="email-input"
                 placeholder="@"
-                className="h-10 w-96 rounded border border-slate-300 px-4"
+                className="h-10 w-70 rounded border border-slate-300 px-4 sm:w-96"
                 required
                 value={dataForm.email}
                 onChange={(e) =>
@@ -91,16 +93,16 @@ export default function ContactMe() {
               />
             </div>
 
-            <div className="flex w-full justify-center gap-4">
+            <div className="flex w-full flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
               <label
                 htmlFor="mensagem-input"
-                className="w-32 text-end text-slate-500"
+                className="w-20 text-end text-slate-500 sm:w-24"
               >
                 Mensagem
               </label>
               <textarea
                 id="mensagem-input"
-                className="w-96 resize-none rounded border border-slate-300 px-4 py-4"
+                className="w-70 resize-none rounded border border-slate-300 px-4 py-4 sm:w-96"
                 rows={5}
                 required
                 value={dataForm.message}
@@ -120,7 +122,7 @@ export default function ContactMe() {
         <img
           src="profile.webp"
           alt="Foto de perfil"
-          className="h-[624px] w-[468px] rounded-2xl"
+          className="rounded-2xl sm:h-[624px] sm:w-[468px]"
         />
       </div>
     </div>
