@@ -16,21 +16,21 @@ export default function Presentation() {
     <div className="mb-10 flex flex-col items-center justify-between gap-2 px-6 py-4 xl:flex-row xl:items-start">
       <div className="my-10 flex flex-col gap-14">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl sm:text-5xl sm:text-nowrap">
+          <h1 className="text-4xl text-gray-800 sm:text-5xl sm:text-nowrap">
             Olá! Prazer, Laura.
           </h1>
-          <h1 className="text-4xl sm:text-5xl sm:text-nowrap">
+          <h1 className="text-4xl text-gray-800 sm:text-5xl sm:text-nowrap">
             Sua Planejadora Financeira.
           </h1>
         </div>
 
-        <Button className="h-16 w-64 text-xl" onClick={() => gotToContactMe()}>
+        <Button className="w-64 text-xl" onClick={() => gotToContactMe()}>
           Envie uma mensagem
         </Button>
 
         <div className="flex flex-col gap-6">
           <a
-            className="flex w-28 items-center justify-center gap-2"
+            className="flex w-28 items-center justify-center gap-2 text-gray-800"
             href=""
             onClick={(e) => {
               e.preventDefault();
@@ -42,7 +42,7 @@ export default function Presentation() {
           </a>
 
           <a
-            className="flex w-28 items-center justify-center gap-2"
+            className="flex w-28 items-center justify-center gap-2 text-gray-800"
             href=""
             onClick={(e) => {
               e.preventDefault();

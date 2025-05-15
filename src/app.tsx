@@ -3,6 +3,8 @@ import Container from "./components/container";
 import Presentation from "./components/presentation";
 import ContactMe from "./components/contact-me";
 import sections from "./consts/sections";
+import ListProblems from "./components/list-problems";
+import ListCompetence from "./components/list-competence";
 
 export default function App() {
   return (
@@ -10,7 +12,7 @@ export default function App() {
       <div className="flex flex-col">
         <Container>
           <header className="py-6">
-            <h1 className="text-2xl">Laura Alves</h1>
+            <h1 className="text-2xl text-gray-800">Laura Alves</h1>
           </header>
         </Container>
 
@@ -18,6 +20,15 @@ export default function App() {
           <Container>
             <Presentation />
           </Container>
+
+          <section className="bg-white">
+            <Container>
+              <div className="flex flex-col justify-between gap-8 bg-white px-8 py-20 lg:flex-row">
+                <ListProblems />
+                <ListCompetence />
+              </div>
+            </Container>
+          </section>
 
           <section id={sections.ContactMe} className="bg-white">
             <Container>
@@ -29,7 +40,7 @@ export default function App() {
         <div className="bg-white">
           <Container>
             <footer className="border-t border-slate-200">
-              <div className="px-5 py-14 text-center text-sm">
+              <div className="px-5 py-14 text-center text-sm text-gray-700">
                 © {new Date().getFullYear()} Todos os direitos reservados
               </div>
             </footer>

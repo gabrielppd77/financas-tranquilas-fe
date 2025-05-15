@@ -47,7 +47,7 @@ export default function ContactMe() {
     <div className="py-20">
       <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <div className="w-full">
-          <h1 className="px-5 py-3 text-4xl">Contate-me</h1>
+          <h1 className="px-5 py-3 text-4xl text-gray-800">Contate-me</h1>
           <form
             className="flex flex-col items-center gap-4 py-5"
             onSubmit={handleSendEmail}
