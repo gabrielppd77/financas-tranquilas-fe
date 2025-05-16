@@ -38,7 +38,7 @@ export default function Presentation() {
             }}
           >
             <div>Instagram</div>
-            <Instagram width={25} height={25} />
+            <Instagram className="fill-[#e1306c]" width={25} height={25} />
           </a>
 
           <a
@@ -50,7 +50,7 @@ export default function Presentation() {
             }}
           >
             <div>WhatsApp</div>
-            <WhatsApp width={25} height={25} />
+            <WhatsApp className="fill-green-600" width={25} height={25} />
           </a>
         </div>
       </div>

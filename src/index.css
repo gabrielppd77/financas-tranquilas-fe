@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 body {
   background: #f9f7fa;
   /* color: var(--foreground); */

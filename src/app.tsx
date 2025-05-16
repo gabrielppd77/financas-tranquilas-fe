@@ -5,18 +5,21 @@ import ContactMe from "./components/contact-me";
 import sections from "./consts/sections";
 import ListProblems from "./components/list-problems";
 import ListCompetence from "./components/list-competence";
+import CarouselImages from "./components/carousel-images";
 
 export default function App() {
   return (
     <div>
       <div className="flex flex-col">
         <Container>
-          <header className="py-6">
-            <h1 className="text-2xl text-gray-800">Laura Alves</h1>
+          <header className="border-b border-slate-200 py-6">
+            <h1 className="text-[24px] font-medium text-gray-800">
+              Laura Alves
+            </h1>
           </header>
         </Container>
 
-        <main>
+        <main className="mt-8">
           <Container>
             <Presentation />
           </Container>
@@ -27,6 +30,12 @@ export default function App() {
                 <ListProblems />
                 <ListCompetence />
               </div>
+            </Container>
+          </section>
+
+          <section className="bg-white">
+            <Container>
+              <CarouselImages />
             </Container>
           </section>
 
