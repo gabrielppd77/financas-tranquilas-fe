@@ -6,6 +6,7 @@ import sections from "./consts/sections";
 import ListProblems from "./components/list-problems";
 import ListCompetence from "./components/list-competence";
 import CarouselImages from "./components/carousel-images";
+import Instructions from "./components/instructions";
 
 export default function App() {
   return (
@@ -36,6 +37,12 @@ export default function App() {
           <section className="bg-white">
             <Container>
               <CarouselImages />
+            </Container>
+          </section>
+
+          <section className="bg-white">
+            <Container>
+              <Instructions />
             </Container>
           </section>
 
