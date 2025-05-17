@@ -8,6 +8,7 @@ import ListCompetence from "./components/list-competence";
 import CarouselImages from "./components/carousel-images";
 import Instructions from "./components/instructions";
 import Quote from "./components/quote";
+import Pricing from "./components/pricing";
 
 export default function App() {
   return (
@@ -50,6 +51,12 @@ export default function App() {
           <section className="bg-[#222]">
             <Container>
               <Quote />
+            </Container>
+          </section>
+
+          <section>
+            <Container>
+              <Pricing />
             </Container>
           </section>
 

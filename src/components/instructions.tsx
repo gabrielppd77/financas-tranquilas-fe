@@ -22,7 +22,7 @@ function InstructionItem({
 
 export default function Instructions() {
   return (
-    <ul className="flex flex-col gap-20 px-4 py-14">
+    <ul className="flex flex-col gap-20 px-4 py-20">
       <InstructionItem
         title="— Anamnese Financeira"
         subtitle="Entendendo o ponto de partida."
